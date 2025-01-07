@@ -11,7 +11,7 @@ __Why is there a need for throws keyword in Code 1 and not in Code 2__
 >    } <br>
 >} <br>
 
-** In Code 1 **, the main method is declared with throws ClassNotFoundException. Here’s why:
+**In Code 1**, the main method is declared with throws ClassNotFoundException. Here’s why:
 
 Reason for throws Keyword: The Class.forName("com.mysql.jdbc.Driver") method call can throw a ClassNotFoundException. 
 By declaring throws ClassNotFoundException, the method signature informs the caller that this exception might be thrown.
@@ -53,7 +53,7 @@ Checked vs. Unchecked Exceptions:
 **Checked Exceptions (like ClassNotFoundException)**
 must be either caught within the method or declared in the method signature using the throws keyword.
 
-**Unchecked Exceptions (like ArithmeticException and ArrayIndexOutOfBoundsException) **
+**Unchecked Exceptions (like ArithmeticException and ArrayIndexOutOfBoundsException)**
 do not need to be declared using throws, and the method can handle them directly if needed.
 
 Exception Handling: 
