@@ -1,7 +1,7 @@
 **Why is there a need for throws keyword in Code 1 and not in Code 2 **
 
 #Code 1
->public class Main {
+>public class Main { <br>
 >    public static void main(String[] args) throws ClassNotFoundException {
 >        try{
 >           Class.forName("com.mysql.jdbc.Driver");
