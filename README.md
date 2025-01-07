@@ -2,14 +2,14 @@
 
 #Code 1
 >public class Main { <br>
->    public static void main(String[] args) throws ClassNotFoundException {
->        try{
->           Class.forName("com.mysql.jdbc.Driver");
->        } catch (ClassNotFoundException e) {
->           System.out.println(e.getMessage());
->        }
->    }
->}
+>    public static void main(String[] args) throws ClassNotFoundException { <br>
+>        try{ <br>
+>           Class.forName("com.mysql.jdbc.Driver"); <br>
+>        } catch (ClassNotFoundException e) { <br>
+>           System.out.println(e.getMessage()); <br>
+>        } <br>
+>    } <br>
+>} <br>
 
 **In Code 1**, the main method is declared with throws ClassNotFoundException. Here’s why:
 
@@ -21,12 +21,12 @@ The redundancy here means you wouldn’t need the throws keyword if you are hand
 
 
 #Code 2
-public class ExceptionDemo2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x= sc.nextInt();
-        int y= sc.nextInt();
-        int[] arr = new int[5];
+public class ExceptionDemo2 { <br>
+    public static void main(String[] args) {  
+        Scanner sc = new Scanner(System.in);  
+        int x= sc.nextInt();  
+        int y= sc.nextInt();  
+        int[] arr = new int[5];  
         try{
             int z = x/y;
             try{
