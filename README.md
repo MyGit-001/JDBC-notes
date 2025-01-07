@@ -1,8 +1,8 @@
 **Why is there a need for throws keyword in Code 1 and not in Code 2 **
 
 #Code 1
->public class Main { <br>
->---public static void main(String[] args) throws ClassNotFoundException { <br>
+>public class Main { <be>
+> public static void main(String[] args) throws ClassNotFoundException { <br>
 >        try{ <br>
 >           Class.forName("com.mysql.jdbc.Driver"); <br>
 >        } catch (ClassNotFoundException e) { <br>
@@ -21,24 +21,24 @@ The redundancy here means you wouldn’t need the throws keyword if you are hand
 
 
 #Code 2
-public class ExceptionDemo2 { <br>
-    public static void main(String[] args) {  
-        Scanner sc = new Scanner(System.in);  
-        int x= sc.nextInt();  
-        int y= sc.nextInt();  
-        int[] arr = new int[5];  
-        try{
-            int z = x/y;
-            try{
-                arr[5] = z;
-            } catch(ArrayIndexOutOfBoundsException e) {
-                System.out.println("Exception Caught: " + e.getMessage());
-            }
-        }catch (ArithmeticException e){
-            System.out.println("Exception Caught: " + e.getMessage());
-        }
-    }
-}
+>public class ExceptionDemo2 { <br>
+>    public static void main(String[] args) {  
+>        Scanner sc = new Scanner(System.in);  
+>        int x= sc.nextInt();  
+>        int y= sc.nextInt();  
+>        int[] arr = new int[5];  
+>        try{  
+>            int z = x/y;  
+>            try{  
+>                arr[5] = z;  
+>            } catch(ArrayIndexOutOfBoundsException e) {  
+>                System.out.println("Exception Caught: " + e.getMessage());  
+>            }  
+>        }catch (ArithmeticException e){  
+>            System.out.println("Exception Caught: " + e.getMessage());  
+>        }  
+>    }  
+>}  
 
 **In Code 2**, there is no throws keyword in the method signature.
 
