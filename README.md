@@ -1,6 +1,6 @@
 __Why is there a need for throws keyword in Code 1 and not in Code 2__
 
-#Code 1
+# Code 1
 >public class Main { <be>
 > public static void main(String[] args) throws ClassNotFoundException { <br>
 >        try{ <br>
