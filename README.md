@@ -11,7 +11,7 @@ __Why is there a need for throws keyword in Code 1 and not in Code 2__
 >    } <br>
 >} <br>
 
-**In Code 1**, the main method is declared with throws ClassNotFoundException. Here’s why:
+** In Code 1 **, the main method is declared with throws ClassNotFoundException. Here’s why:
 
 Reason for throws Keyword: The Class.forName("com.mysql.jdbc.Driver") method call can throw a ClassNotFoundException. 
 By declaring throws ClassNotFoundException, the method signature informs the caller that this exception might be thrown.
@@ -20,7 +20,7 @@ Redundancy in Catch Block: Despite the throws declaration, the exception is caug
 The redundancy here means you wouldn’t need the throws keyword if you are handling the exception within the same method. However, it’s a common pattern to keep throws for indicating potential exceptions to the calling environment or future modifications.
 
 
-#Code 2
+# Code 2
 >public class ExceptionDemo2 { <br>
 >    public static void main(String[] args) {  
 >        Scanner sc = new Scanner(System.in);  
