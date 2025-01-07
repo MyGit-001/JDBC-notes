@@ -1,4 +1,4 @@
-**Why is there a need for throws keyword in Code 1 and not in Code 2 **
+__Why is there a need for throws keyword in Code 1 and not in Code 2__
 
 #Code 1
 >public class Main { <be>
