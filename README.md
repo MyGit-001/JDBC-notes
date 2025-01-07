@@ -2,7 +2,7 @@
 
 #Code 1
 >public class Main { <br>
->    public static void main(String[] args) throws ClassNotFoundException { <br>
+>---public static void main(String[] args) throws ClassNotFoundException { <br>
 >        try{ <br>
 >           Class.forName("com.mysql.jdbc.Driver"); <br>
 >        } catch (ClassNotFoundException e) { <br>
